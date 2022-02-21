@@ -1,0 +1,616 @@
+* {margin: 0;padding: 0;}
+body {width: 100%;background-color: #f0f0f0;}
+html{font-size: 12px;}
+a{text-decoration: none;color: #333;}
+a:active{color: #333;}
+ul li {float: left;text-align: center;list-style: none;}
+ol{list-style: none;}
+
+
+header {
+    width: 100%;
+    height: 105px;
+}
+
+header>.top{
+    width: 100%;
+    height: 70px;
+    background-color: #333;
+    overflow: hidden;
+}
+
+header .top .content {
+    width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+    /* background-color: aqua; */
+}
+
+.content h1 a {
+    color: azure;
+    text-decoration: none;
+}
+.content h1 {
+    float: left;
+    width: 177px;
+    height: 70px;
+    line-height: 70px;
+    margin-left: 40px;
+}
+.content h1 .logo{
+    float: left;
+    width: 34px;height: 34px;
+    margin-top: 20px;
+    background: url(../images/topbar.png) no-repeat;
+    background-position: 0 -18px;
+}
+
+.content ul {
+    float: left;
+}
+
+.contentclo{
+    background-color: rgb(12, 2, 20);
+}
+.content ul li:hover {
+    background-color: rgb(12, 2, 20);
+}
+
+.content ul li a {
+    color: beige;
+    display: block;
+    height: 70px;
+    line-height: 70px;
+}
+
+.content ul li {
+    padding: 0 20px;
+}
+
+header>.bottom {
+    width: 100%;
+    height: 35px;
+    background-color: #C20C0C;
+}
+
+.btnul {
+    height: 100%;
+    width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.btnul ul li a{
+    float: left;
+    text-align: center;
+}
+.btnul ul li a em{
+    display: inline-block;
+    font-style: normal;
+    height: 20px;
+    margin: 4px 20px;
+    padding: 2px 13px;
+    color: white;
+}
+.btnul ul li a em:hover{
+    border-radius: 20px;
+    background-color: #e7e7e7;
+}
+.bgc{
+    border-radius: 20px;
+    background-color: #e7e7e7; 
+}
+/* 搜索模块 */
+header .top .content .seroch{
+    float: left;
+    margin: 20px 0 0 20px;
+    width: 158px;height: 32px;
+    box-sizing: border-box;
+}
+header .top .content .seroch input{
+    width: 100%;height: 100%;
+    outline: none;
+    border: none;
+    background-color: white;
+    padding-left: 25px;
+    border-radius: 32px;
+}
+header .top .content .srih{
+    float: left;
+    margin: 20px 0 0 45px;
+    width: 90px;height: 32px;
+    text-align: center;line-height: 32px;
+    border-radius: 32px;
+    border: 1px solid rgb(143, 134, 134);
+    cursor: pointer;
+    color: #f0f0f0;
+}
+header .top .content .srih:hover{
+    border: 1px solid white;
+}
+header .top .content .dl{
+    float: left;
+    margin: 20px 0 0 15px;
+    width: 32px;height: 32px;
+    line-height: 32px;text-align: center;
+}
+header .top .content .dl a{
+    color: #f0f0f0;
+}
+header .top .content .dl a:hover{
+    text-decoration: underline;
+}
+/* 轮播图模块 */
+section{
+    width: 100%;
+    height: 285px;
+    background: linear-gradient(to top right,rgb(138,187,204),rgb(207,227,236));
+}
+section .secontent{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+section .secontent .bgimage img{
+    height: 285px;
+}
+.bgimage{
+    float: left;
+    position: relative;
+}
+.rightimg{
+    float: left;
+    width: 254px;height: 285px;
+    background-color: #C20C0C;
+} 
+section .secontent .bgimage ul{
+    position: absolute;
+    left: 270px;
+    bottom: 5px;
+}
+section .secontent .bgimage ul li a{
+    display: inline-block;
+    width: 8px;height: 8px;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    margin: 0 5px;
+}
+section .secontent .bgimage ul li a:hover{
+    background-color: red;
+}
+.abgcolor{
+    background-color: red!important;
+}
+.rightimg .down{
+    width: 100%;height: 100%;
+    background: url(../images/download.png) no-repeat;
+    position: relative;
+}
+.rightimg .down p{
+    font-size: 10px;
+    color: white;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+/*固定箭头*/
+.secontent .leftBanner{
+    margin-top: 110px;
+    margin-right: 20px;
+    width: 40px;height: 60px;
+    background: url(../images/banner.png) no-repeat;
+    background-position:0 -362px;
+    cursor: pointer;
+}
+.secontent .leftBanner:hover{
+    background-position:0 -430px;
+}
+.secontent .rightBanner{
+    margin-top: 110px;
+    margin-left: 20px;
+    width: 40px;height: 60px;
+    background: url(../images/banner.png) no-repeat;
+    background-position:0 -508px;
+    cursor: pointer;
+}
+.secontent .rightBanner:hover{
+    background-position:0 -578px;
+}
+/* 歌曲模块 */
+.acontent{
+    height: 1350px;
+    border-bottom: 1px solid #d3d0d0;
+}
+.article{
+    width: 982px;height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+article{
+    width: 732px;
+    background-color: white;
+    padding: 20px 20px 40px;
+    box-sizing: border-box;
+    overflow: hidden;
+    float: left;
+    border: 1px solid #d3d0d0;
+}
+article .recommend{
+    width: 690px;
+    /* margin-bottom: 40px; */
+}
+article .recommend .tp{
+    box-sizing: border-box;
+    width: 100%;height: 35px;
+    line-height: 35px;
+    border-bottom:2px solid  #C20C0C;
+    padding: 0 20px 0 40px;
+    background: url(../images/index.png) no-repeat;
+    background-position: -225px -155px;
+}
+article .recommend .tp>a{
+    font-weight: bold;
+    font-size: 25px;
+    color: black;
+}
+
+.tpa a{
+    display: inline-block;
+    width: 40px;height: 25px;
+    margin: 0 10px; 
+}
+.tpa a:hover{
+    text-decoration:underline;
+}
+.tpa span{
+    color: #666;
+}
+.tpr{
+    float: right;
+}
+.tpr a:hover{
+    text-decoration:underline;
+}
+.tpr i{
+    display: inline-block;
+    width: 12px;height: 12px;
+    line-height: 12px;
+    background: url(../images/index.png) no-repeat;
+    background-position: 0 -240px;
+}
+/* 热门推荐下 */
+.recombo{
+    width: 690px;
+    height: 400px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    padding:20px 0px;
+    margin-bottom: 20px;
+}
+.recombo div{
+    width: 140px;height: 185px;
+    /* background-color: #C20C0C; */
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+}
+.recombo div p a:hover{
+    text-decoration:underline;
+}
+/* 热门推荐模块 */
+.xt{
+    box-sizing: border-box;
+    width: 687px;
+    padding: 0px 14px;
+    background-color: #f0f0f0;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.recombop{
+    width: 654px;height: 200px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:0px 0px 20px;
+    margin-bottom: 20px;
+}
+.recombop div{
+    width: 118px;height: 100px;
+    background-color: aqua;
+    background: url(../images/coverall.png) no-repeat;
+    background-position: 0px -570px;
+}
+.recombop div p{
+    width: 100px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.recombop a{
+    display: inline-block;
+    width: 16px;height: 18px
+}
+.recombop div a:hover{
+    text-decoration:underline;
+}
+.rela{
+    background: url(../images/index.png) no-repeat;
+    background-position: -262px -76px;
+}
+.relr{
+    background: url(../images/index.png) no-repeat;
+    background-position: -300px -76px;
+}
+/* 榜单 */
+.xr{
+    box-sizing: border-box;
+    width: 687px;
+    background-color: #f0f0f0;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.xr .bdt{
+    display: flex;
+    justify-content: space-between;
+}
+.xr .bdt>div{
+    width: 230px;height: 120px;
+    border-left:1px solid rgb(158, 145, 145) ;
+    border-right:1px solid rgb(158, 145, 145) ;
+    border-top:1px solid rgb(158, 145, 145) ;
+    margin-left: -1px;
+    box-sizing: border-box;
+    padding: 20px 0 0 20px;
+}
+.xr .bdt>div>div:nth-child(1){
+    width: 80px;height: 80px;
+    box-shadow: 0px 2px 2px;
+    float: left;
+}
+.xr .bdt div div img{
+    width: 80px;height: 80px;
+}
+.xr .bdt div .bd{
+    float: left;
+}
+.xr .bdt div .bd h3{
+    padding: 10px 0 5px 10px;
+}
+.xr .bdt div .bd .bf{
+    display: inline-block;
+    width: 28px;height: 28px;
+    margin-left:10px;
+    background: url(../images/index.png) no-repeat;
+    background-position: -265px -202px;
+}
+.xr .bdt div .bd .bf:hover{
+    background-position: -265px -232px;
+}
+.xr .bdt div .bd .bft{
+    display: inline-block;
+    width: 28px;height: 28px;
+    margin-left:2px;
+    background: url(../images/index.png) no-repeat;
+    background-position: -295px -202px;
+}
+.xr .bdt div .bd .bft:hover{
+    background-position: -295px -232px;
+}
+
+.bdb{
+    display: flex;
+    justify-content: space-between;  
+}
+.bdb ol{
+    width: 230px;
+}
+.bdb ol li{
+    border-left:1px solid rgb(158, 145, 145) ;
+    border-right:1px solid rgb(158, 145, 145) ;
+    margin-left:-1px;
+}
+.bdb ol li span{
+    display: inline-block;
+    width: 35px;height: 32px;
+    margin-left: 20px;
+    text-align: center;line-height: 32px;
+    font-weight:bold;
+    color:#666
+}
+.c{
+    color: #C20C0C!important;
+}
+.bdb ol li:nth-child(odd){
+    background-color: rgb(207, 203, 203);
+}
+.bdb ol li:nth-child(even){
+    background-color: #f0f0f0;
+}
+.bdb ol li a{
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.bdb ol li a:hover{
+    text-decoration:underline;
+}
+.cbottom{
+    width: 230px;height: 32px;
+    line-height: 32px;
+    box-sizing:border-box;
+    padding-left: 140px;
+    background-color: rgb(207, 203, 203);
+    border-left:1px solid rgb(158, 145, 145) ;
+    border-right:1px solid rgb(158, 145, 145) ;
+    border-bottom:1px solid rgb(158, 145, 145) ;
+    margin-left: -1px;
+}
+/* 右边栏 */
+aside{
+    float: left;
+    width: 250px;height: 100%;
+    background-color: white;;
+}
+aside>div:nth-child(1){
+    width: 100%;
+    height: 126px;
+    background-color: #e6dddd;
+    overflow: hidden;
+}
+aside .atop p{
+    font-size: 13px;
+    line-height: 24px;
+    margin: 20px 20px 10px;
+}
+aside .atop a{
+    display: inline-block;
+    width: 120px;height: 30px;
+    color: white;text-align:center;line-height: 30px;
+    border-radius: 5px;
+    background-color: red;
+    margin: 0 75px;
+}
+.bdf{
+    background-color: white;
+    overflow: hidden;
+}
+.rgj{
+    width: 210px;height: 24px;
+    border-bottom:1px solid #ada7a7 ;
+    margin:20px;
+}
+.rgjl{
+    font-weight: bold;
+}
+.rgjr{
+    color: #666;
+    float: right;
+}
+.bdft{
+    width: 210px;  
+    margin: 5px 0 20px 20px;
+}
+.bdft .xl{
+    background-color: #f0f0f0;
+    width: 100%;height: 62px;
+    margin: 15px 0px;
+}
+.bdft .xl .xlt{
+    width: 62px;height: 62px;
+    float: left;
+}
+.bdft .xl .xltr{
+    width: 148px;height: 62px;
+    float: left;
+    box-sizing: border-box;
+    padding: 0px 0px 0px 14px;
+}
+.bdft .xl .xltr span{
+    font-weight: bold;
+}
+.bdft .xl .xltr p{
+    font-size: 12px;
+    margin-top: 10px;
+    white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.bdft>a{
+    display: block;
+    width: 210px;height: 31px;
+    line-height: 31px;text-align: center;
+    background-color: #f0f0f0;
+    border: 1px solid #ada7a7;
+    border-radius: 5px;
+}
+.bdft .xlp{
+    width: 100%;height: 40px;
+}
+.bdft .xlp .xlt{
+    float: left;
+}
+.bdft .xlp .xltrld{
+    float: left;
+}
+.bdft .xlp .xltrld span{
+    font-size: 8px;
+    margin-left: 6px;
+}
+.bdft .xlp .xltrld p{
+    white-space:nowrap; 
+	overflow:hidden;		
+	text-overflow:ellipsis;
+    font-size: 8px;
+    margin-left: 6px;
+}
+
+/* 底部模块 */
+footer{
+    width: 100%;height: 200px;
+}
+footer .ftoo{
+    width: 982px;height: 100%;
+    margin: 0 auto;
+}
+footer .ftoo .ft{
+    width: 520px;
+    float: left;
+    overflow: hidden;
+    color: #ada7a7;
+}
+footer .ftoo .ft p{
+    width: 100%;height: 24px;
+    margin-top: 10px;
+    font-size: 12px;
+}
+footer .ftoo .ft p a{
+    color: #ada7a7;
+}
+.block{
+    display: inline-block;
+    height: 13px;
+    margin: 0 10px;
+    color: #ada7a7;
+}
+footer .ftoo .ft p a:hover{
+    text-decoration:underline;
+}
+.rt{
+    float: left;
+    width: 400px;height: 136px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.rt div{
+    width: 60px;height: 70px;
+    margin:0 15px;
+    text-align: center;
+    color: #ada7a7;
+}
+.rt div>div{
+    width: 50px;height: 45px;
+    background-color: blue;
+    margin: 0 auto;
+    background: url(../images/foot_enter_new.png);
+    background-size: 110px 552px;
+}
+.rt div>span{
+    white-space:nowrap;
+}
+
+nav{
+    width: 49px;height: 44px;
+    position: fixed;
+    right:300px;
+    bottom: 200px;
+    background: url(../images/sprite.png) no-repeat;
+    background-position: -266px -48px;
+}
+nav a{
+    display: block;
+    width: 100%;height: 100%;
+}

@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <!-- 导航栏第一个模块 -->
+        <div class="top">
+            <div class="content" id="content">
+                <h1>
+                    <div class="logo">
+
+                    </div>
+                    <a href="#">网易云音乐</a>
+                </h1>
+                <ul>
+                    <li class="contentclo" onclick="toplist(0)">
+                        <a href="#">发现音乐</a>
+                    </li>
+                    <li onclick="toplist(1)">
+                        <a href="#">我的音乐</a>
+                    </li>
+                    <li onclick="toplist(2)">
+                        <a href="#">关注</a>
+                    </li>
+                    <li onclick="toplist(3)">
+                        <a href="#">商城</a>
+                    </li>
+                    <li onclick="toplist(4)">
+                        <a href="#">音乐人</a>
+                    </li>
+                    <li onclick="toplist(5)">
+                        <a href="#">下载客户端</a>
+                    </li>
+                </ul>
+                <div class="seroch">
+                    <input type="text" placeholder="音乐/视频/电台/用户">
+                </div>
+                <div class="srih">创作者中心</div>
+                <div class="dl">
+                    <a href="#">登录</a>
+                </div>
+            </div>
+        </div>
+        <!-- 导航栏第二个模块 -->
+        <div class="bottom">
+            <div class="btnul" id="btnul">
+                <ul class="cul">
+                    <li>
+                        <a href="#">
+                            <em class="bgc" onclick="bottomlist(0)">推荐</em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <em onclick="bottomlist(1)">排行榜</em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <em onclick="bottomlist(2)">歌单</em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <em onclick="bottomlist(3)">主播电台</em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <em onclick="bottomlist(4)">歌手</em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <em onclick="bottomlist(5)">新碟上架</em>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- 轮播图模块 -->
+    <section>
+        <div class="secontent">
+            <!-- 左箭头 -->
+            <div class="leftBanner" id="leftBanner"></div>
+            <!-- 轮播图 -->
+            <div class="bgimage" id="bgimage">
+                <img src="images/bg_1.jpg" alt="bg1" id="img_1">
+                <img src="images/bg_2.jpg" alt="bg2" id="img_2">
+                <img src="images/bg_3.jpg" alt="bg3" id="img_3">
+                <img src="images/bg_4.jpg" alt="bg4" id="img_4">
+                <img src="images/bg_5.jpg" alt="bg5" id="img_5">
+                <img src="images/bg_6.jpg" alt="bg6" id="img_6">
+                <img src="images/bg_7.jpg" alt="bg7" id="img_7">
+                <img src="images/bg_8.jpg" alt="bg8" id="img_8">
+                <img src="images/bg_9.jpg" alt="bg9" id="img_9">
+                <img src="images/bg_10.jpg" alt="bg10" id="img_10">
+                <ul>
+                    <li><a href="#" class="abgcolor" onclick="show(1)"></a></li>
+                    <li><a href="#" onclick="show(2)"></a></li>
+                    <li><a href="#" onclick="show(3)"></a></li>
+                    <li><a href="#" onclick="show(4)"></a></li>
+                    <li><a href="#" onclick="show(5)"></a></li>
+                    <li><a href="#" onclick="show(6)"></a></li>
+                    <li><a href="#" onclick="show(7)"></a></li>
+                    <li><a href="#" onclick="show(8)"></a></li>
+                    <li><a href="#" onclick="show(9)"></a></li>
+                    <li><a href="#" onclick="show(10)"></a></li>
+                </ul>
+            </div>
+            <!-- 下载图模块 -->
+            <div class="rightimg">
+                <div class="down">
+                    <p>
+                        PC 安卓 iPhone WP iPad Mac 六大客户端
+                    </p>
+                </div>
+            </div>
+            <!-- 右箭头 -->
+            <div class="rightBanner" id="rightBanner"></div>
+        </div>
+    </section>
+
+    <!-- 歌曲模块 -->
+    <div class="acontent">
+        <div class="article">
+            <article>
+                <!-- 热门推荐上 -->
+                <div class="recommend">
+                    <div class="tp">
+                        <a href="#">热门推荐</a>
+                        <span class="tpa">
+                            <a href="#">华语</a><span>|</span>
+                            <a href="#">流行</a><span>|</span>
+                            <a href="#">摇滚</a><span>|</span>
+                            <a href="#">民谣</a><span>|</span>
+                            <a href="#">电子</a>
+                        </span>
+                        <span class="tpr">
+                            <a href="#">更多</a>
+                            <i>&nbsp;</i>
+                        </span>
+                    </div>
+                </div>
+                <!-- 热门推荐下 -->
+                <div class="recombo">
+                    <div>
+                        <img src="images/t1.jpg" alt="t1">
+                        <p>
+                            <a href="#">我想你了其实我也很脆弱</a>
+                        </p>
+                    </div>
+                    <div>
+                        <img src="images/t2.jpg" alt="t2">
+                        <p>
+                            <a href="#">甜甜的歌曲要你听起来好像恋爱了</a>
+                        </p>
+                    </div>
+                    <div>
+                        <img src="images/t3.jpg" alt="t3">
+                        <p>
+                            <a href="#">别拿我教你的去爱别人（Cover）</a>
+                        </p>
+                    </div>
+                    <div>
+                        <img src="images/t4.jpg" alt="t4">
+                        <p>
+                            <a href="#">会听002 人物志：朴树，入世做少年</a>
+                        </p>
+                    </div>
+                    <div>
+                        <img src="images/t5.jpg" alt="t5">
+                        <p>
+                            <a href="#">如果再给我一次机会你还会选择走吗</a>
+                        </p>
+                    </div>
+                    <div>
+                        <img src="images/t6.jpg" alt="t6">
+                        <p>
+                            <a href="#">对话《凉子访谈录》主理人：大厂、996、裸辞，我也经历...</a>
+                        </p>
+                    </div>
+                    <div>
+                        <img src="images/t7.jpg" alt="t7">
+                        <p>
+                            <a href="#">"祝你前程似锦，在难遇我"</a>
+                        </p>
+                    </div>
+                    <div>
+                        <img src="images/t8.jpg" alt="t8">
+                        <p>
+                            <a href="#">WeAreThePeople抖音热门版</a>
+                        </p>
+                    </div>
+                </div>
+
+
+                <!-- 新碟上架上 -->
+                <div class="recommend">
+                    <div class="tp">
+                        <a href="#">新碟上架</a>
+                        <span class="tpr">
+                            <a href="#">更多</a>
+                            <i>&nbsp;</i>
+                        </span>
+                    </div>
+                </div>
+                <!-- 新碟上架下 -->
+                <div class="xt">
+                    <div class="recombop">
+                        <a href="#" class="rela"></a>
+                        <div>
+                            <img src="images/c1.jpg" alt="c1">
+                            <p>
+                                <a href="#">Melody Node 旋律笔记</a>
+                            </p>
+                            <p>
+                                <a href="#">满舒克</a>
+                            </p>
+                        </div>
+                        <div>
+                            <img src="images/c2.jpg" alt="c2">
+                            <p>
+                                <a href="#">Watercolor Eyes（From "Euphoria" An Original HBO Series）</a>
+                            </p>
+                            <p>
+                                <a href="#">Lana Del Rey</a>
+                            </p>
+                        </div>
+                        <div>
+                            <img src="images/c3.jpg" alt="c3">
+                            <p>
+                                <a href="#">Brightside</a>
+                            </p>
+                            <p>
+                                <a href="#">Rich Brian</a>
+                            </p>
+                        </div>
+                        <div>
+                            <img src="images/c4.jpg" alt="c4">
+                            <p>
+                                <a href="#">Light Switch</a>
+                            </p>
+                            <p>
+                                <a href="#">Charlie Puth</a>
+                            </p>
+                        </div>
+                        <div>
+                            <img src="images/c5.jpg" alt="c5">
+                            <p>
+                                <a href="#">leta</a>
+                            </p>
+                            <p>
+                                <a href="#">坂田龍一</a>
+                            </p>
+                        </div>
+                        <a href="#" class="relr"></a>
+                    </div>
+                </div>
+
+                <!-- 榜单上 -->
+                <div class="recommend">
+                    <div class="tp">
+                        <a href="#">榜单</a>
+                        <span class="tpr">
+                            <a href="#">更多</a>
+                            <i>&nbsp;</i>
+                        </span>
+                    </div>
+                </div>
+                <!-- 榜单下 -->
+                <div class="xr">
+                    <div class="bdt">
+                        <!-- 飙升榜 -->
+                        <div>
+                            <div>
+                                <img src="images/k1.jpg" alt="k1">
+                            </div>
+                            <div class="bd">
+                                <a href="#">
+                                    <h3>飙升榜</h3>
+                                </a>
+                                <span class="bf"></span>
+                                <span class="bft"></span>
+                            </div>
+                        </div>
+                        <!-- 新歌榜 -->
+                        <div>
+                            <div>
+                                <img src="images/k2.jpg" alt="k2">
+                            </div>
+                            <div class="bd">
+                                <a href="#">
+                                    <h3>新歌榜</h3>
+                                </a>
+                                <span class="bf"></span>
+                                <span class="bft"></span>
+                            </div>
+                        </div>
+                        <!-- 原创榜 -->
+                        <div>
+                            <div>
+                                <img src="images/k3.jpg" alt="k3">
+                            </div>
+                            <div class="bd">
+                                <a href="#">
+                                    <h3>原创榜</h3>
+                                </a>
+                                <span class="bf"></span>
+                                <span class="bft"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bdb">
+                        <!-- 飙升榜 -->
+                        <ol>
+                            <li>
+                                <span class="c">1</span>
+                                <a href="#">11</a>
+                            </li>
+                            <li>
+                                <span class="c">2</span>
+                                <a href="#">天知道</a>
+                            </li>
+                            <li>
+                                <span class="c">3</span>
+                                <a href="#">予你</a>
+                            </li>
+                            <li>
+                                <span>4</span>
+                                <a href="#">可梦</a>
+                            </li>
+                            <li>
+                                <span>5</span>
+                                <a href="#">你从未离去</a>
+                            </li>
+                            <li>
+                                <span>6</span>
+                                <a href="#">漠河舞厅﹒2022</a>
+                            </li>
+                            <li>
+                                <span>7</span>
+                                <a href="#">渐暖</a>
+                            </li>
+                            <li>
+                                <span>8</span>
+                                <a href="#">人世间</a>
+                            </li>
+                            <li>
+                                <span>9</span>
+                                <a href="#">孤勇者</a>
+                            </li>
+                            <li>
+                                <span>10</span>
+                                <a href="#">你听</a>
+                            </li>
+                            <div class="cbottom">
+                                <a href="#">查看全部></a>
+                            </div>
+                        </ol>
+                        <!-- 新歌榜 -->
+                        <ol>
+                            <li>
+                                <span class="c">1</span>
+                                <a href="#">浪漫主义2.0</a>
+                            </li>
+                            <li>
+                                <span class="c">2</span>
+                                <a href="#">你从未离去(完整版)</a>
+                            </li>
+                            <li>
+                                <span class="c">3</span>
+                                <a href="#">光字片</a>
+                            </li>
+                            <li>
+                                <span>4</span>
+                                <a href="#">你从未离去</a>
+                            </li>
+                            <li>
+                                <span>5</span>
+                                <a href="#">The Joker And The Que...</a>
+                            </li>
+                            <li>
+                                <span>6</span>
+                                <a href="#">渐暖</a>
+                            </li>
+                            <li>
+                                <span>7</span>
+                                <a href="#">亲爱的</a>
+                            </li>
+                            <li>
+                                <span>8</span>
+                                <a href="#">Trouble</a>
+                            </li>
+                            <li>
+                                <span>9</span>
+                                <a href="#">我们的爱</a>
+                            </li>
+                            <li>
+                                <span>10</span>
+                                <a href="#">男二号</a>
+                            </li>
+                            <div class="cbottom">
+                                <a href="#">查看全部></a>
+                            </div>
+                        </ol>
+                        <!-- 原创榜 -->
+                        <ol>
+                            <li>
+                                <span class="c">1</span>
+                                <a href="#">猫是一种距离单位</a>
+                            </li>
+                            <li>
+                                <span class="c">2</span>
+                                <a href="#">天知道</a>
+                            </li>
+                            <li>
+                                <span class="c">3</span>
+                                <a href="#">类人</a>
+                            </li>
+                            <li>
+                                <span>4</span>
+                                <a href="#">在云际</a>
+                            </li>
+                            <li>
+                                <span>5</span>
+                                <a href="#">月亮邮差</a>
+                            </li>
+                            <li>
+                                <span>6</span>
+                                <a href="#">斯德哥尔摩的爱恋</a>
+                            </li>
+                            <li>
+                                <span>7</span>
+                                <a href="#">喜欢</a>
+                            </li>
+                            <li>
+                                <span>8</span>
+                                <a href="#">散场之后</a>
+                            </li>
+                            <li>
+                                <span>9</span>
+                                <a href="#">100 calls</a>
+                            </li>
+                            <li>
+                                <span>10</span>
+                                <a href="#">Babe</a>
+                            </li>
+                            <div class="cbottom">
+                                <a href="#">查看全部></a>
+                            </div>
+                        </ol>
+                    </div>
+                    </di>
+            </article>
+            <!-- 右边栏 -->
+            <aside>
+                <div>
+                    <div class="atop">
+                        <p>登录网易云音乐,可以享受无限收藏的乐趣,并且无限同步到手机</p>
+                        <a href="#">用户登录</a>
+                    </div>
+                </div>
+                <div class="bdf">
+                    <div class="rgj">
+                        <span class="rgjl">入驻歌手</span>
+                        <span class="rgjr">查看全部></span>
+                    </div>
+                </div>
+                <div class="bdft">
+                    <div class="xl">
+                        <div class="xlt">
+                            <img src="images/a1.jpg" alt="a1">
+                        </div>
+                        <div class="xltr">
+                            <span>
+                                <a href="#">张惠妹aMEl</a>
+                            </span>
+                            <p>台湾歌手张惠妹</p>
+                        </div>
+                    </div>
+                    <div class="xl">
+                        <div class="xlt">
+                            <img src="images/a2.jpg" alt="a2">
+                        </div>
+                        <div class="xltr">
+                            <span>
+                                <a href="#">Fine乐团</a>
+                            </span>
+                            <p>独立音乐人</p>
+                        </div>
+                    </div>
+                    <div class="xl">
+                        <div class="xlt">
+                            <img src="images/a3.jpg" alt="a3">
+                        </div>
+                        <div class="xltr">
+                            <span>
+                                <a href="#">萬曉利</a>
+                            </span>
+                            <p>民谣歌手、中国现代民谣的代表人物之一</p>
+                        </div>
+                    </div>
+                    <div class="xl">
+                        <div class="xlt">
+                            <img src="images/a4.jpg" alt="a4">
+                        </div>
+                        <div class="xltr">
+                            <span>
+                                <a href="#">音乐人赵雷</a>
+                            </span>
+                            <p>民谣歌手</p>
+                        </div>
+                    </div>
+                    <div class="xl">
+                        <div class="xlt">
+                            <img src="images/a5.jpg" alt="a5">
+                        </div>
+                        <div class="xltr">
+                            <span>
+                                <a href="#">王三溥</a>
+                            </span>
+                            <p>音乐人</p>
+                        </div>
+                    </div>
+                    <a href="#">申请成为网易音乐人</a>
+                </div>
+                <div class="bdf">
+                    <div class="rgj">
+                        <span class="rgjl">热门主播</span>
+                    </div>
+                </div>
+                <div class="bdft">
+                    <div class="xlp">
+                        <div class="xlt">
+                            <img src="images/b1.jpg" alt="b1">
+                        </div>
+                        <div class="xltrld">
+                            <span>
+                                <a href="#">陈立</a>
+                            </span>
+                            <p>心理学家、美食家陈立教授</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bdft">
+                    <div class="xlp">
+                        <div class="xlt">
+                            <img src="images/b2.jpg" alt="b2">
+                        </div>
+                        <div class="xltrld">
+                            <span>
+                                <a href="#">刘维-Julius</a>
+                            </span>
+                            <p>歌手、播客节目《维维道来...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bdft">
+                    <div class="xlp">
+                        <div class="xlt">
+                            <img src="images/b3.jpg" alt="b3">
+                        </div>
+                        <div class="xltrld">
+                            <span>
+                                <a href="#">莫非定律MoreFeel</a>
+                            </span>
+                            <p>男人双人全创作独立乐团</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bdft">
+                    <div class="xlp">
+                        <div class="xlt">
+                            <img src="images/b4.jpg" alt="b4">
+                        </div>
+                        <div class="xltrld">
+                            <span>
+                                <a href="#">碎嘴许美达</a>
+                            </span>
+                            <p>脱口秀网络达人</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bdft">
+                    <div class="xlp">
+                        <div class="xlt">
+                            <img src="images/b5.jpg" alt="b5">
+                        </div>
+                        <div class="xltrld">
+                            <span>
+                                <a href="#">银临Rachel</a>
+                            </span>
+                            <p>古风音乐人</p>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <!-- 底部模块 -->
+    <footer>
+        <div class="ftoo">
+            <div class="ft">
+                <p>
+                    <a href="#" class="block">服务条款</a>
+                    <a href="#" class="block">隐私政策</a>
+                    <a href="#" class="block">儿童隐私政策</a>
+                    <a href="#" class="block">版权投诉指引</a>
+                    <a href="#" class="block">意见反馈</a>
+                    <a href="#" class="block">广告合作</a>
+                </p>
+                <p>
+                    <span>网易公司版权所有©1997-2022</span>
+                    <span>杭州乐读科技有限公司运营:</span>
+                    <a href="#">浙网文[2021] 1186-054号</a>
+                </p>
+                <p>
+                    <span>违法和不良信息举报电话:0571-89853516</span>
+                    <span>举报邮箱:</span>
+                    <a href="#">ncm5990@163.com</a>
+                </p>
+                <p>
+                    <a href="#">粤B2-20090191-18 共业和信息化部备案管理系统网站</a>
+                    <a href="#">浙公网安备33010902002564号</a>
+                </p>
+            </div>
+            <div class="rt">
+                <div>
+                    <div class="d1"></div>
+                    <span>Amped Studio</span>
+                </div>
+                <div>
+                    <div></div>
+                    <span>用户认证</span>
+                </div>
+                <div>
+                    <div></div>
+                    <span>独立音乐人</span>
+                </div>
+                <div>
+                    <div></div>
+                    <span>赞赏</span>
+                </div>
+                <div>
+                    <div></div>
+                    <span>视频奖励</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <nav id="btnTop" style="display: none;">
+        <a href="javascript:;"></a>
+    </nav>
+</body>
+<script src="js/index.js"></script>
+
+</html>
